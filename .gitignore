@@ -11,3 +11,5 @@ terraform.tfstate.backup
 node_modules/
 test-results/
 playwright-report/
+.netlify/
+test/browser/screenshots/

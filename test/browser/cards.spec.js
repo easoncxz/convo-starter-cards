@@ -47,7 +47,8 @@ test.describe('Conversation Starter Cards', () => {
   test('category filter populates options', async ({ page }) => {
     const options = page.locator('#category-filter option');
     // "All Categories" + at least 10 real categories
-    await expect(options).toHaveCount({ minimum: 11 });
+    const count = await options.count();
+    expect(count).toBeGreaterThanOrEqual(11);
 
     // First option is "All Categories"
     await expect(options.first()).toHaveText('All Categories');
