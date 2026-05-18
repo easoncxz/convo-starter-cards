@@ -1,0 +1,13 @@
+_site/
+_cache/
+dist-newstyle/
+result
+result-*
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+*.tfstate.*
+node_modules/
+test-results/
+playwright-report/

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Conversation Starter Cards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Conversation Starter Cards</h1>
+        <div id="card-container">
+            <div id="card">
+                <div id="category-label"></div>
+                <div id="question-text">Press the button or hit Space to draw a card.</div>
+            </div>
+        </div>
+        <div id="controls">
+            <select id="category-filter" aria-label="Filter by category">
+                <option value="all">All Categories</option>
+            </select>
+            <button id="draw-btn">Draw a Card</button>
+        </div>
+        <p id="hint">Press <kbd>Space</kbd> to draw a new card</p>
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+</html>
